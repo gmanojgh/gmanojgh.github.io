@@ -1,0 +1,99 @@
+*{box-sizing: border-box}
+
+body{margin: 0; padding: 0; font-size: 20px;}
+header,footer{
+    text-align: center; background: white;position: relative;}
+   
+nav{width:100%;background: linear-gradient(to right, rgb(235, 227, 120)
+    ,rgb(233, 233, 200));}
+footer{background: linear-gradient(to right, rgb(233, 233, 200),
+     rgb(235, 227, 120));}
+
+nav ul{
+    margin: 0; display: flex; 
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;padding: 1%;
+}
+nav ul li a{text-decoration: none; color: red;}
+#page1 div{display: flex;height:400px;margin:0;padding: 0;}  
+.active{color: #000;} 
+div{display: flex;margin:0;padding: 0;}  
+
+@media screen and (max-width:600px){
+    nav ul{flex-direction: column;}
+    nav ul li{width: 96%; margin: 1%;padding: 1%}
+    #page1 .a {display:flex; flex-direction: column-reverse;}
+    #page4 {display: flex;flex-direction: column;text-align: center}
+    /* flex-direction:column; text-align: center}
+    #page4 section about div{display:flex;flex-direction: row;margin: auto} */
+    #page2 div img{border-radius: 50%}
+    #page2 div .a{margin-right: 0;}
+    #page3 .all{display: flex;flex-wrap: column}
+
+    }
+    header img{
+        max-width:100%; height: 80px;
+    }
+    img {
+        max-width:100%; height: 100%;
+    }
+    #page1 .main{flex: 2;}
+    #page1 .sidebar{flex: 1;}
+    #page1 .sidebar img{border-radius: 50%;} 
+    
+    #page1 .sidebar img:hover{transform:scaleX(-1);width:90%;height:90% ;}
+    .main img{width:100%}
+    a:hover{color: rgb(175, 63, 63);}
+    a:active{color: rgb(93, 156, 172);}
+    header a img{max-width: 30%;text-align: right;height:80px}
+    #page5 div {display: flex ;flex-direction: row;justify-content: space-around}
+    #page5 div img{width: auto;height:100px}
+  #page5 div img:hover,#page4 section div div img:hover{animation: shake 0.5s;animation-iteration-count: infinite}
+  @keyframes shake{
+       0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% { transform: translate(-1px, -2px) rotate(-1deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    80% { transform: translate(-1px, 2px) rotate(-1deg); }
+    100% { transform: translate(-3px, 1px) rotate(0deg); }
+}
+#page4 .container{display:flex;width:100%;flex-wrap: wrap}
+  #page4 .x{flex: 1}
+  #page4 .y{flex: 1}
+  #page4 .r{flex: 1}
+ #page4 {background-color: rgb(100, 223, 245);}
+ 
+ #page4 section div h3{color: rgb(168, 70, 13)}
+ #page4 section div div{height: 60px;width: 120px;}
+ 
+  #page3 .all{display: flex;flex-wrap: wrap }
+  
+
+ #page3 h1,h4{color: lightseagreen;
+    }
+   #page3 div p{color: tan;} 
+   #page3 div li{color: yellowgreen}
+   #page3 div h2{color: rgb(202, 104, 104)}
+    #page5 div{
+animation-name: Hello;
+animation-duration: 5s;
+animation-direction: alternate;
+animation-direction: normal;
+animation-iteration-count: infinite;
+}
+@keyframes Hello{
+    0% {background-color: rgb(51, 238, 82);left:0px;top:0px;}
+    25% {background-color: rgb(89, 216, 78);left:200px;top:0px;}
+    50% {background-color: rgb(50, 207, 50);left:2000px;top:200px;}
+    75% {background-color: rgb(53, 192, 53);left:0px;top:200px;}
+    100% {background-color: rgb(25, 151, 31);left:0px;top:0px;} } 
+#page2 .a{height: auto;display: flex;flex-direction: column;font-size: 14px;margin-right: 5%}
+#page2 div{display: flex;flex-direction: row;}
+ #page2{background:rgb(185,193,204) }
+#page2 div{text-align: left;margin:1%;padding: 2%;font-family:Verdana, Geneva, 
+    Tahoma, sans-serif;font-style: oblique;}
+    #page2 div img:hover{width: 125%;height:125%;}
+  #page6 .wireframe,.validators{display: flex;flex-direction: column}  
+  #page6 h2{color: rgb(102, 52, 52);}
